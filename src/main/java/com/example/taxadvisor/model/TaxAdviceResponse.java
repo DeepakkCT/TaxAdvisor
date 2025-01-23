@@ -7,18 +7,24 @@ public class TaxAdviceResponse {
     private double taxAfterInvestment;
     private double totalTaxSaved;
     private List<SchemeRecommendation> recommendations;
+    private double leftOverAmount;
+    private String buttonName;
 
     public TaxAdviceResponse() {
     }
 
     public TaxAdviceResponse(double taxBeforeInvestment, double taxAfterInvestment,
-                             double totalTaxSaved, List<SchemeRecommendation> recommendations) {
+                             double totalTaxSaved, List<SchemeRecommendation> recommendations,
+                             double leftOverAmount, String buttonName) {
         this.taxBeforeInvestment = taxBeforeInvestment;
         this.taxAfterInvestment = taxAfterInvestment;
         this.totalTaxSaved = totalTaxSaved;
         this.recommendations = recommendations;
+        this.leftOverAmount = leftOverAmount;
+        this.buttonName = buttonName;
     }
 
+    // Getters and setters
     public double getTaxBeforeInvestment() {
         return taxBeforeInvestment;
     }
@@ -49,5 +55,21 @@ public class TaxAdviceResponse {
 
     public void setRecommendations(List<SchemeRecommendation> recommendations) {
         this.recommendations = recommendations;
+    }
+
+    public double getLeftOverAmount() {
+        return leftOverAmount;
+    }
+
+    public void setLeftOverAmount(double leftOverAmount) {
+        this.leftOverAmount = leftOverAmount;
+    }
+
+    public String getButtonName() {
+        return buttonName;
+    }
+
+    public void setButtonName(String buttonName) {
+        this.buttonName = buttonName;
     }
 }

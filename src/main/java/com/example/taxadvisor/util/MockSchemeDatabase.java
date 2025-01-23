@@ -27,15 +27,11 @@ public class MockSchemeDatabase {
                 "LOW", "MEDIUM", 8.0));
         schemes.add(new InvestmentScheme("Life Insurance Premium", "Life Insurance Policies", 150000, "80C",
                 "LOW", "LONG", 5.0));
-        schemes.add(new InvestmentScheme("Sukanya Samriddhi Yojana", "Girl Child Savings Scheme", 150000, "80C",
+        schemes.add(new InvestmentScheme("SSY", "Girl Child Savings Scheme", 150000, "80C",
                 "LOW", "LONG", 8.0));
 
-        // 80CCD(1)
-        schemes.add(new InvestmentScheme("NPS Tier I", "National Pension System - Tier I", 50000, "80CCD(1)",
-                "MEDIUM", "LONG", 10.0));
-
         // 80CCD(1B)
-        schemes.add(new InvestmentScheme("NPS Tier I (Additional)", "National Pension System - Additional Deduction", 50000, "80CCD(1B)",
+        schemes.add(new InvestmentScheme("NPS", "National Pension System", 50000, "80CCD(1B)",
                 "MEDIUM", "LONG", 10.0));
 
         return schemes;
