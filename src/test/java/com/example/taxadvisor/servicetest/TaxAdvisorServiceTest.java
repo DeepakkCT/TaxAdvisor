@@ -26,7 +26,7 @@ import static org.junit.jupiter.api.Assertions.*;
                     1000000, // income
                     200000,  // amountToInvest
                     50000,   // currentEPF
-                    "LOW",   // riskProfile
+                    "LOW",   // riskProfilea
                     "SHORT"  // lockInPeriod
             );
 
