@@ -1,5 +1,8 @@
 package com.example.taxadvisor.model;
 
+import lombok.Data;
+
+@Data
 public class TaxAdviceRequest {
     private double income;
     private double amountToInvest;
@@ -10,8 +13,15 @@ public class TaxAdviceRequest {
     private String lockInPeriod; // e.g., "SHORT", "MEDIUM", "LONG"
     private boolean hasHealthInsurance;
 
-    public TaxAdviceRequest() {
+
+    public TaxAdviceRequest( double income ,double amountToInvest, double currentEPFContribution,String riskProfile,String lockInPeriod) {
+        this.income = income;
+        this.amountToInvest = amountToInvest;
+        this.currentEPFContribution = currentEPFContribution;
+        this.riskProfile = riskProfile;
+        this.lockInPeriod = lockInPeriod;
     }
+
 
     // Getters and Setters
     public double getIncome() {
@@ -77,4 +87,6 @@ public class TaxAdviceRequest {
     public void setHasHealthInsurance(boolean hasHealthInsurance) {
         this.hasHealthInsurance = hasHealthInsurance;
     }
+
+
 }
