@@ -8,8 +8,8 @@ package com.example.taxadvisor.servicetest;
     import com.example.taxadvisor.service.TaxAdvisorService;
     import com.example.taxadvisor.util.MockSchemeDatabase;
     import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+    import org.junit.jupiter.api.Test;
+    import static org.junit.jupiter.api.Assertions.*;
 
     class TaxAdvisorServiceTest {
 
